@@ -22,9 +22,9 @@ export default {}
 * {
   padding: 0px;
   margin: 0px;
+  font-weight: 200;
 }
 .entire_navbar {
-  background-color: #75bec2;
   display: grid;
   height: 8vh;
   grid-template-columns: 1fr 1fr;

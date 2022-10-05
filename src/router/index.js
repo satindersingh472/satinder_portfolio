@@ -66,7 +66,7 @@ const routes = [
       },
       {
         name: `keywords`,
-        content: `Satinder Singh, full-stack web developement`
+        content: `Satinder Singh, full-stack web developement, projects, skills, about`
       }
     ]
   }

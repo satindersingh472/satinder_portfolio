@@ -17,11 +17,12 @@ export default {}
 * {
   padding: 0px;
   margin: 0px;
+  font-weight: 300;
 }
 .entire_box {
   display: grid;
-  place-items: center;
-  background: linear-gradient(45deg, #60637e, #a9594e);
+  align-items: center;
+  justify-items: start;
 }
 .first_name,
 .last_name,
@@ -29,15 +30,12 @@ export default {}
 .developer {
   font-size: 15vw;
 }
-.last_name, .full_stack{
-    color: #75bec2;
-}
 @media only screen and (min-width: 700px) {
   .first_name,
   .last_name,
   .full_stack,
   .developer {
-    font-size: 7vw;
+    font-size: 4vw;
   }
 }
 </style>
