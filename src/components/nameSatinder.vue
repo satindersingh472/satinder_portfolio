@@ -1,10 +1,26 @@
 <template>
-  <div>
-    <div class="entire_box">
-      <h1 class="first_name">SATINDER</h1>
-      <h1 class="last_name">SINGH</h1>
-      <h1 class="full_stack">Is a Full - Stack</h1>
-      <h1 class="developer">Web Developer</h1>
+  <div class="image_info">
+    <div class="image">
+      <img
+        src="@/assets/satinder_profile.jpeg"
+        alt="satinder's profile image"
+      />
+    </div>
+    <div class="info">
+      <div class="name">
+        <h4>Who am I ?</h4>
+        <h1 class="first_name">I'M SATINDER SINGH</h1>
+        <h1 class="full_stack">Full - Stack</h1>
+        <h1 class="developer">Web Developer</h1>
+      </div>
+      <div class="info_box">
+        <h3>
+          I am passion driven Full - Stack Web Developer and I love to develop
+          responsive websites for all kinds of devices. A nice UI/UX, solid
+          database and defensive back-end code are my Interests while developing
+          a website
+        </h3>
+      </div>
     </div>
   </div>
 </template>
@@ -19,23 +35,44 @@ export default {}
   margin: 0px;
   font-weight: 300;
 }
-.entire_box {
+img {
+  width: 100%;
+}
+.name {
   display: grid;
   align-items: center;
-  justify-items: start;
+  margin-top: 10vh;
+  h4,h1{
+    align-self: center;
+  }
+}
+.info{
+  display: grid;
+  .name{
+    place-items: start;
+  }
+  .info_box{
+    display: grid;
+    place-items: center;
+  }
 }
 .first_name,
 .last_name,
 .full_stack,
 .developer {
-  font-size: 15vw;
+  font-size: 10vw;
 }
+
 @media only screen and (min-width: 700px) {
   .first_name,
   .last_name,
   .full_stack,
   .developer {
     font-size: 4vw;
+  }
+  .image_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 </style>
