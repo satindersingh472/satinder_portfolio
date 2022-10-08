@@ -38,24 +38,34 @@ export default {}
 img {
   width: 100%;
 }
+.image_info{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.image{
+  img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+  }
+}
 .name {
   display: grid;
   align-items: center;
   margin-top: 10vh;
   h4,h1{
+    font-weight: 400;
     align-self: center;
   }
 }
-.info{
-  display: grid;
-  .name{
-    place-items: start;
-  }
-  .info_box{
+
+.info_box{
     display: grid;
     place-items: center;
-  }
+    margin-top: 3vh;
 }
+
 .first_name,
 .last_name,
 .full_stack,
@@ -63,7 +73,7 @@ img {
   font-size: 10vw;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 500px) {
   .first_name,
   .last_name,
   .full_stack,
@@ -72,7 +82,7 @@ img {
   }
   .image_info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 }
 </style>
