@@ -4,17 +4,18 @@
       <navbar-desktop></navbar-desktop>
     </div>
     <div v-if="desktop_view === false" >
-        <h2>Mobile navbar
-        </h2>
+        <navbar-mobile></navbar-mobile>
     </div>
   </div>
 </template>
 
 <script>
-import NavbarDesktop from '@/components/navbarDesktop.vue'
+import NavbarDesktop from '@/components/navbarDesktop.vue';
+import NavbarMobile from "@/components/navbarMobile.vue";
 export default {
   components: {
     NavbarDesktop,
+    NavbarMobile
   },
   methods: {
     change_querie(){

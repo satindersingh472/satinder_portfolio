@@ -5,26 +5,27 @@
         <h3>Satinder Singh</h3>
       </div>
       <div class="links">
-        <h2>Home</h2>
-        <h2>About</h2>
-        <h2>Contact</h2>
         <h2>Projects</h2>
+        <h2>Tools&Tech</h2>
+        <h2>Contact</h2>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import 'aos/dist/aos.css';
 export default {}
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
   font-weight: 200;
   font-size: 1rem;
+  font-family: 'Anton',sans-serif;
 }
 img{
   width: 100%;
@@ -33,7 +34,6 @@ img{
   display: grid;
   height: 8vh;
   grid-template-columns: 1fr 1fr;
-  background-color: azure;
 }
 .name_container {
   display: grid;
@@ -41,7 +41,6 @@ img{
   justify-items: start;
   h3{
     font-weight: bold;
-    font-family: 'Anton',;
   }
   .name_image {
     padding-left: 30px;
@@ -56,5 +55,6 @@ img{
     display: grid;
     grid-auto-flow: column;
     align-items: center;
+    justify-items: center;
 }
 </style>

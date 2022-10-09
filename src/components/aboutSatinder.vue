@@ -15,7 +15,7 @@
       <div class="info_box">
         <h3>
           I am passion driven Full - Stack Web Developer and I love to develop
-          responsive websites for different screen sizes. A nice UI/UX, solid
+          responsive websites for different screen sizes.<br> A nice UI/UX, solid
           database and defensive back-end code are my Interests while developing
           a website.
         </h3>
@@ -41,6 +41,7 @@ export default {
   margin: 0px;
   font-weight: lighter;
   font-family: 'Oswald', sans-serif;
+  overflow: scroll;
 }
 img {
   width: 100%;
@@ -66,12 +67,13 @@ img {
   align-items: center;
   margin-top: 10vh;
   text-align: center;
-}
-.full_stack,.web_developer {
-    align-self: center;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 900;
-    font-size: 2rem;
+  h1{
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  h4{
+    font-size: 1.5rem;
+  }
 }
 .info_box {
   display: grid;
@@ -81,17 +83,18 @@ img {
   font-size: 1.2rem;
 }
 .social_links {
-  position: fixed;
-  bottom: 0%;
+  position: sticky;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  margin-top: 20px;
 }
 
 @media only screen and (min-width: 500px) {
-  .image_info {
-    display: grid;
-    grid-auto-flow: column;
-  }
   .info_box {
-    font-size: 1.5vw;
+   h3{
+     font-size: 1.5rem;
+   }
   }
   .name {
     h1 {

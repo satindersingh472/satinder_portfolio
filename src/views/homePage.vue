@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="page">
         <nav-bar></nav-bar>
         <about-satinder></about-satinder>
        
@@ -23,6 +23,9 @@ import NavBar from "@/components/navBar.vue"
     padding: 0px;
     margin: 0px;
     display: grid;
+}
+.page{
+    height:100vh;
 }
 
 </style>
