@@ -66,10 +66,10 @@ img {
   text-align: center;
   h1{
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   h4{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 .info_box {
@@ -77,7 +77,9 @@ img {
   place-items: center;
   text-align: center;
   margin-top: 3vh;
-  font-size: 1.2rem;
+    h3{
+    font-size: 1rem;
+  }
 }
 .social_links {
   position: sticky;
@@ -85,6 +87,7 @@ img {
   background: white;
   width: 100%;
   margin-top: 20px;
+
 }
 .full_stack{
   color: #4b8bbe;
