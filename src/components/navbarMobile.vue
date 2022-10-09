@@ -52,7 +52,6 @@ export default ({
 
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 * {
   padding: 0px;
@@ -62,13 +61,29 @@ export default ({
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-
+  .open{
+    display: grid;
+    justify-items: end;
+  }
+  .close{
+    display: grid;
+    justify-items: end;
+  }
 }
 .entire_navbar{
-    text-align:center;
+  display: grid;
+    text-align:start;
+    height: 100vh;
+    gap: 20px;
 }
 .links{
     font-family: 'Anton',sans-serif;
+    line-height: 2;
+    display: grid;
+    align-items: center;
+    h2{
+      font-size: 2rem;
+    }
 }
 .button_open_close{
     width: 50px;
@@ -80,6 +95,7 @@ export default ({
       font-family: 'Anton', sans-serif;
       text-decoration: none;
       color: black;
+      line-height: 2;
     }
   }
 }

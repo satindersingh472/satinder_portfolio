@@ -18,14 +18,12 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 
 * {
   padding: 0px;
   margin: 0px;
-  font-weight: 200;
   font-size: 1rem;
-  font-family: 'Anton',sans-serif;
 }
 img{
   width: 100%;

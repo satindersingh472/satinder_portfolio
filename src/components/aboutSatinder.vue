@@ -35,13 +35,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
-  font-weight: lighter;
-  font-family: 'Oswald', sans-serif;
-  overflow: scroll;
 }
 img {
   width: 100%;
@@ -68,7 +65,7 @@ img {
   margin-top: 10vh;
   text-align: center;
   h1{
-    font-weight: bold;
+    font-weight: 900;
     font-size: 1.5rem;
   }
   h4{
@@ -90,15 +87,19 @@ img {
   margin-top: 20px;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 700px) {
+  .image_info{
+    display: grid;
+    grid-auto-flow: column;
+  }
   .info_box {
    h3{
-     font-size: 1.5rem;
+     font-size: 1.2rem;
    }
   }
   .name {
     h1 {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
   }
 }
