@@ -1,22 +1,28 @@
 <template>
     <div>
         <nav-bar></nav-bar>
-        <name-satinder></name-satinder>
+        <about-satinder></about-satinder>
+       
     </div>
 </template>
 
 <script>
+import AboutSatinder from "@/components/aboutSatinder.vue";
 import NavBar from "@/components/navBar.vue"
-import NameSatinder from "@/components/nameSatinder.vue"
     export default {
         components:{ 
             NavBar,
-            NameSatinder
+            AboutSatinder
         }
         
     }
 </script>
 
 <style lang="scss" scoped>
+*{
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+}
 
 </style>
