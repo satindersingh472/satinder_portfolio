@@ -86,6 +86,14 @@ img {
   width: 100%;
   margin-top: 20px;
 }
+.full_stack{
+  color: #4b8bbe;
+  text-shadow: 3px 3px 6px #FFD43B;
+}
+.web_developer{
+  color: #FFD43B;
+  text-shadow: 3px 3px 6px #4b8bbe;
+}
 
 @media only screen and (min-width: 700px) {
   .image_info{
