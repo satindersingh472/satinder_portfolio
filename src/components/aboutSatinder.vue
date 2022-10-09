@@ -8,7 +8,7 @@
     </div>
     <div class="info">
       <div class="name">
-        <h4 class="hi"> 👋,my name is Satinder and I am </h4>
+        <h4 class="hi">👋,my name is Satinder and I am</h4>
         <h1 class="full_stack">FULL STACK</h1>
         <h1 class="web_developer">WEB DEVELOPER</h1>
       </div>
@@ -20,17 +20,17 @@
           a website.
         </h3>
       </div>
-      <social-links></social-links>
     </div>
+    <social-links class="social_links"></social-links>
   </div>
 </template>
 
 <script>
-import SocialLinks from "@/components/socialLinks.vue";
+import SocialLinks from '@/components/socialLinks.vue'
 export default {
-  components:{
-    SocialLinks
-  }
+  components: {
+    SocialLinks,
+  },
 }
 </script>
 
@@ -40,27 +40,22 @@ export default {
   padding: 0px;
   margin: 0px;
   font-weight: lighter;
-  font-family:'Oswald',sans-serif;
-}
-h1{
-  font-family: 'Oswald',sans-serif;
-  font-weight: 900;
+  font-family: 'Oswald', sans-serif;
 }
 img {
   width: 100%;
 }
-.info{
+.info {
   display: grid;
   line-height: 1.5;
 }
-.image_info{
+.image_info {
   display: grid;
   align-items: center;
   justify-items: center;
-  background-color:azure;
 }
-.image{
-  img{
+.image {
+  img {
     border-radius: 50%;
     height: 200px;
     width: 200px;
@@ -71,31 +66,36 @@ img {
   align-items: center;
   margin-top: 10vh;
   text-align: center;
-  h1{
+}
+.full_stack,.web_developer {
     align-self: center;
-  }
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
 }
-
-.info_box{
-    display: grid;
-    place-items: center;
-    margin-top: 3vh;
-    font-size: 4vw;
+.info_box {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-top: 3vh;
+  font-size: 1.2rem;
 }
-
+.social_links {
+  position: fixed;
+  bottom: 0%;
+}
 
 @media only screen and (min-width: 500px) {
-
   .image_info {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-auto-flow: column;
   }
-  .info_box{
+  .info_box {
     font-size: 1.5vw;
   }
-  .name{
-    h1{
-      font-size:4rem;
+  .name {
+    h1 {
+      font-size: 4rem;
     }
   }
 }

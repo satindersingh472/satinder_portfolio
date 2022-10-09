@@ -2,20 +2,13 @@
     <div>
         <div class="all_links">
             <div class="one_link">
-                <img src="@/assets/github.svg" alt="github icon">
-                <button><a href="https://github.com/satindersingh472">Github</a></button>
+                <a href="https://github.com/satindersingh472"><img src="@/assets/github.svg" alt="github icon"></a>
             </div>
             <div class="one_link">
-                <img src="@/assets/linkedin.svg" alt="linkedin icon">
-                <button>
-                    <a href="https://www.linkedin.com/in/satinder-singh-650137188/">LinkedIn</a>
-                </button>
+                    <a href="https://www.linkedin.com/in/satinder-singh-650137188/"><img src="@/assets/linkedin.svg" alt="linkedin icon"></a>
             </div>
             <div class="one_link">
-                <img src="@/assets/email.svg" alt="email icon">
-                <button>
-                    <a href="emailto:satindersingh472@gmail.com">Contact Me</a>
-                </button>
+                    <a href="emailto:satindersingh472@gmail.com"><img src="@/assets/email.svg" alt="email icon"></a>
             </div>
         </div>
     </div>
@@ -36,23 +29,13 @@ img{
 .all_links{
     display: grid;
     grid-auto-flow: column;
+    gap: 30px;
     .one_link{
         display: grid;
         place-items: center;
         img{
-            width: 20px;
-            height: 20px;
-        }
-        button{
-            background-color:transparent;
-            border: none;
-            a{
-                text-decoration: none;
-                color: black;
-                &:hover{
-                    text-decoration:underline;
-                }
-            }
+            width: 40px;
+            height: 30px;
         }
     }
 }
