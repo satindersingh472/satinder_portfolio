@@ -1,6 +1,6 @@
 <template>
     <div>
-     <h2>{ <span class="name">SATINDER</span> }<span class="period">.</span></h2> 
+     <h2>{<span class="name">SATINDER</span>}</h2> 
     </div>
 </template>
 
@@ -14,14 +14,11 @@
   h2{
     color: #FFD43B;
     font-size: 2rem;
+    font-weight: bold;
   }
   .name{
     font-weight: 900;
     color: #4b8bbe;
   }
-  .period{
-    font-weight: bold;
-    color: green;
-    font-size: 2rem;
-  }
+
 </style>

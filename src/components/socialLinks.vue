@@ -13,7 +13,7 @@
       </div>
       <div class="one_link">
         <a href="emailto:satindersingh472@gmail.com">
-          <img src="@/assets/email.svg" alt="email icon" />
+          <img src="@/assets/email.png" alt="email icon" />
         </a>
       </div>
     </div>
@@ -40,8 +40,8 @@ img {
     display: grid;
     place-items: center;
     img {
-      width: 40px;
-      height: 30px;
+      width: 50px;
+      height: 50px;
     }
   }
 }

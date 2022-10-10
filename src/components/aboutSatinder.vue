@@ -8,7 +8,7 @@
     </div>
     <div class="info">
       <div class="name">
-        <h4 class="hi">👋,my name is Satinder and I am</h4>
+        <h4 class="hi">👋,my name is<span class="bold_name"> SATINDER</span> and I am</h4>
         <h1 class="full_stack">FULL STACK</h1>
         <h1 class="web_developer">WEB DEVELOPER</h1>
       </div>
@@ -53,6 +53,9 @@ img {
   align-items: center;
   justify-items: center;
 }
+.bold_name{
+  font-weight: 700;
+}
 .image {
   img {
     border-radius: 50%;
@@ -69,8 +72,8 @@ img {
     font-weight: 900;
     font-size: 4rem;
   }
-  h4{
-    font-size: 1rem;
+  h4,h3{
+    font-size: 1.2rem;
   }
 }
 .info_box {
@@ -100,12 +103,8 @@ img {
 }
 
 @media only screen and (min-width: 700px) {
-  .image_info{
-    display: grid;
-    grid-auto-flow: column;
-  }
   .info_box {
-   h3{
+   h3,h4{
      font-size: 1.2rem;
    }
   }
