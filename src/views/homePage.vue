@@ -7,12 +7,13 @@
 </template>
 
 <script>
+
 import AboutSatinder from "@/components/aboutSatinder.vue";
 import NavBar from "@/components/navBar.vue"
     export default {
         components:{ 
             NavBar,
-            AboutSatinder
+            AboutSatinder,
         }
         
     }
@@ -26,5 +27,4 @@ import NavBar from "@/components/navBar.vue"
 .page{
     height:100vh;
 }
-
 </style>

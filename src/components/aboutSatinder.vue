@@ -70,7 +70,7 @@ img {
   text-align: center;
   h1{
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
   h4,h3{
     font-size: 1.2rem;
