@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="navbar">
-        <div class="name"><h2>Satinder Singh</h2></div>
+        <div class="name"><h2>Sat<span class="blue">i</span>nder S<span class="yellow">i</span>ngh</h2></div>
         <div v-if="open_menu === false" class="open">
             <img class="button_open_close" @click="open_close" src="@/assets/open.svg" alt="open menu button">
         </div>
@@ -76,6 +76,17 @@ export default ({
     height: 100vh;
     gap: 20px;
 }
+.name{
+    h2,.blue,.yellow{
+        font-weight: bold;
+    }
+}
+.blue{
+    color: #4b8bbe;
+}
+.yellow{
+    color: #FFD43B;
+}
 .links{
     font-family: 'Anton',sans-serif;
     line-height: 2;
@@ -83,6 +94,7 @@ export default ({
     align-items: center;
     h2{
       font-size: 2rem;
+      font-weight: bold;
     }
 }
 .button_open_close{

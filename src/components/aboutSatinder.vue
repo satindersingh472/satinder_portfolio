@@ -26,7 +26,8 @@
 </template>
 
 <script>
-import SocialLinks from '@/components/socialLinks.vue'
+import SocialLinks from '@/components/socialLinks.vue';
+
 export default {
   components: {
     SocialLinks,
@@ -66,7 +67,7 @@ img {
   text-align: center;
   h1{
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 4rem;
   }
   h4{
     font-size: 1rem;
@@ -110,7 +111,7 @@ img {
   }
   .name {
     h1 {
-      font-size: 3.5rem;
+      font-size: 5rem;
     }
   }
 }

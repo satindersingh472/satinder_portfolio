@@ -22,7 +22,6 @@ import NavBar from "@/components/navBar.vue"
 *{
     padding: 0px;
     margin: 0px;
-    display: grid;
 }
 .page{
     height:100vh;
