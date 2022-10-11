@@ -4,8 +4,8 @@
       <div class="form_heading">
         <h2>Get In Touch</h2>
       </div>
-      <form action="https://formspree.io/f/mjvzoeoy" method="post">
       <div class="form_fields">
+      <form action="https://formspree.io/f/mjvzoeoy" method="post">
         <div class="one_field">
           <p>First Name<span class="star">*</span></p>
           <input type="text" ref="first_name" name="firstname" placeholder="First Name" />
@@ -22,9 +22,9 @@
             <p>Message<span class="star">*</span></p>
             <textarea ref="text" name="message" ></textarea>
         </div>
-      </div>
       <input type="submit" value="submit">
       </form>
+    </div>
     </div>
   </div>
 </template>
@@ -41,6 +41,8 @@ export default {}
 .form{
   display: grid;
   place-items: center;
+  background: #FFD43B;
+  height: 100vh;
 }
 
 </style>

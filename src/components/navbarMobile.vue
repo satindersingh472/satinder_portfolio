@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="navbar">
-        <div class="name"><h2>Sat<span class="blue">i</span>nder S<span class="yellow">i</span>ngh</h2></div>
+      <logo-satinder></logo-satinder>
         <div v-if="open_menu === false" class="open">
             <img class="button_open_close" @click="open_close" src="@/assets/open.svg" alt="open menu button">
         </div>
@@ -28,8 +28,11 @@
 </template>
 
 <script>
-
+import LogoSatinder from "@/components/logoSatinder.vue"
 export default ({
+  components: {
+    LogoSatinder,
+  },
     methods: {
         open_close() {
             if(this.open_menu){
