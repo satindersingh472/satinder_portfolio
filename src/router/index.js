@@ -33,7 +33,7 @@ const routes = [
     component: ContactPage,
     meta:[
       {
-        title: `Satinder's Contact`
+        title: `Contact Satinder` 
       },
       {
         name: `author`,

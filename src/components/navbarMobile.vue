@@ -13,7 +13,7 @@
       <div class="links">
         <h2>Projects</h2>
         <h2>Tools&Tech</h2>
-        <h2>Contact</h2>
+        <router-link class="contact" to="/contact_page">Contact</router-link>
       </div>
       <div class="email_phone">
         <p>

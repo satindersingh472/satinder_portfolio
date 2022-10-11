@@ -7,7 +7,6 @@
 </template>
 
 <script>
-
 import AboutSatinder from "@/components/aboutSatinder.vue";
 import NavBar from "@/components/navBar.vue"
     export default {

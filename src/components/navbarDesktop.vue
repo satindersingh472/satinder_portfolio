@@ -7,7 +7,7 @@
       <div class="links">
         <h2>Projects</h2>
         <h2>Tools&Tech</h2>
-        <h2>Contact</h2>
+        <router-link to="/contact_page" class="contact">Contact</router-link>
       </div>
     </div>
   </div>
