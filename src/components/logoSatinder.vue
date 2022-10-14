@@ -1,6 +1,6 @@
 <template>
     <div>
-     <h2>{<span class="name">SATINDER</span>}</h2> 
+     <router-link class="links" to="/"><h2>{<span class="name">SATINDER</span>}</h2></router-link>
     </div>
 </template>
 
@@ -16,9 +16,13 @@
     font-size: 2rem;
     font-weight: bold;
   }
+  .links{
+    text-decoration: none;
+  }
   .name{
     font-weight: 900;
     color: #4b8bbe;
+    
   }
 
 </style>

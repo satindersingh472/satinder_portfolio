@@ -5,9 +5,9 @@
        <logo-satinder></logo-satinder>
         </div>
       <div class="links">
-        <h2>Projects</h2>
-        <h2>Tools&Tech</h2>
-        <router-link to="/contact_page" class="contact">Contact</router-link>
+        <router-link to="/projects_satinder" class="one_link"><h2>Projects</h2></router-link>
+        <router-link to="/tools_tech" class="one_link"><h2>Tools&Tech</h2></router-link>
+        <router-link to="/contact_page" class="one_link">Contact</router-link>
       </div>
     </div>
   </div>
@@ -60,5 +60,14 @@ img{
     grid-auto-flow: column;
     align-items: center;
     justify-items: center;
+    .one_link{
+      text-decoration: none;
+      color: black;
+      padding: 5px;
+      transition: background .3s ease-in-out ;
+      &:hover{
+        background: #ffd43b;
+      }
+    }
 }
 </style>

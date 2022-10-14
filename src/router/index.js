@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import HomePage from "@/views/homePage.vue"
 import ContactPage from "@/views/contactPage.vue"
 import AboutMe from "@/views/aboutMe.vue"
+import ToolsTech from "@/views/toolsTech.vue";
+import ProjectsSatinder from "@/views/projectsSatinder.vue";
 
 Vue.use(VueRouter)
 
@@ -12,7 +14,7 @@ const routes = [
     component: HomePage,
     meta: [
       {
-        title: `Hi, I'm Satinder Singh`
+        title: `Satinder Singh`
       },
       {
         name: `author`,
@@ -67,6 +69,47 @@ const routes = [
       {
         name: `keywords`,
         content: `Satinder Singh, full-stack web developement, projects, skills, about`
+      }
+    ]
+  },{
+    path: `/tools_tech`,
+    component: ToolsTech,
+    meta: [
+      {
+        title: 'knowledge of Tools'
+      },
+      {
+        name: `author`,
+        content: `Satinder Singh`
+      },
+      {
+        name: `description`,
+        content: `Description about satinder's knowledge of tools`
+      },
+      {
+        name: `keywords`,
+        content: `programming languages, tools, using logic`
+      }
+    ]
+  },
+  {
+    path: `/projects_satinder`,
+    component: ProjectsSatinder,
+    meta:[
+      {
+        title: 'projects satinder'
+      },
+      {
+        name: `author`,
+        content: `Satinder singh`
+      },
+      {
+        name: `description`,
+        content: `Description about the projects from satinder`
+      },
+      {
+        name: `keywords`,
+        content: `vue projects, python projects, javascript, front-end, database, backend`
       }
     ]
   }

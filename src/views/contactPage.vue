@@ -32,19 +32,18 @@ import ContactForm from '@/components/contactForm.vue';
 }
 h1{
   font-weight: bold;
-  font-size: 8vw;
+  font-size: 10vw;
   color:#4b8bb4;
   }
 
 .bar{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
-  place-items: center;
   width: 100%;
   .question{
     width: 100%;
     display: grid;
     place-items: center;
+    text-decoration: underline #ffd43b;
     
   }
 }
