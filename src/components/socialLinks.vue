@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="all_links">
+      <div>
       <div class="one_link">
         <a href="https://github.com/satindersingh472">
           <img src="@/assets/github.svg" alt="github icon" />
@@ -12,15 +13,33 @@
         </a>
       </div>
       <div class="one_link">
-        <a href="emailto:satindersingh472@gmail.com">
-          <img src="@/assets/email.png" alt="email icon" />
-        </a>
+          <img @click="show_email" src="@/assets/email.svg" alt="email icon" />
       </div>
+      </div>
+     
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script>
+export default({
+  methods: {
+    show_email() {
+      if(this.hide === false){
+        this.hide = true;
+      } else if(this.hide === true){
+        this.hide = false
+      }
+      
+    }
+  },
+  data() {
+    return {
+      hide: true
+    }
+  },
+})
+</script>
 
 <style lang="scss" scoped>
 * {
@@ -39,10 +58,13 @@ img {
   .one_link {
     display: grid;
     place-items: center;
+    width: 50px;
+    height: 50px;
     img {
-      width: 50px;
-      height: 50px;
+      width: 100%;
+      height: 100%;
     }
+    
   }
 }
 @media only screen and (min-width:500px){

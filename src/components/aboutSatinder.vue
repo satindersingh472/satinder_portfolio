@@ -21,16 +21,15 @@
         </h3>
       </div>
     </div>
-    <social-links class="social_links"></social-links>
+
   </div>
 </template>
 
 <script>
-import SocialLinks from '@/components/socialLinks.vue';
+
 
 export default {
   components: {
-    SocialLinks,
   },
 }
 </script>
@@ -104,7 +103,7 @@ img {
 
 @media only screen and (min-width: 700px) {
   .info_box {
-   h3,h4{
+   h3{
      font-size: 1.2rem;
    }
   }
