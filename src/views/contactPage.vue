@@ -1,7 +1,10 @@
 <template>
-  <div>
+  <div class="page">
 <nav-bar></nav-bar>
 <div class="bar">
+  <div class="question">
+      <h1>Get In touch</h1>
+  </div>
   
 </div>
 <contact-form></contact-form>
@@ -19,5 +22,30 @@ import ContactForm from '@/components/contactForm.vue';
 </script>
 
 <style lang="scss" scoped>
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.page{
+  display: grid;
+  gap: 20px;
+}
+h1{
+  font-weight: bold;
+  font-size: 8vw;
+  color:#4b8bb4;
+  }
 
+.bar{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  place-items: center;
+  width: 100%;
+  .question{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    
+  }
+}
 </style>

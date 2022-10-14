@@ -35,7 +35,6 @@ img{
 }
 .entire_navbar {
   display: grid;
-  height: 8vh;
   grid-template-columns: 1fr 1fr;
 }
 

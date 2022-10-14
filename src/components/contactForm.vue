@@ -1,9 +1,6 @@
 <template>
   <div class="page">
     <div class="form">
-      <div class="form_heading">
-        <h2>Get In Touch</h2>
-      </div>
       <div class="form_fields">
       <form class="actual_form" action="https://formspree.io/f/mjvzoeoy" method="post">
         <div class="one_field">
@@ -22,7 +19,7 @@
             <p>Message<span class="star">*</span></p>
             <textarea ref="text" name="message" ></textarea>
         </div>
-      <input type="submit" value="submit">
+      <input class="submit" type="submit" value="Submit">
       </form>
     </div>
     </div>
@@ -47,12 +44,6 @@ export default {}
   display: grid;
   place-items: center;
   width: 100%;
-  .form_heading{
-    h2{
-      font-size:2rem;
-      font-weight:bold;
-    }
-  }
   .form_fields{
     width:100%;
     display:grid;
@@ -71,6 +62,12 @@ export default {}
       justify-self:center;
       padding: 10px;
       margin:10px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 4px #4b8bbe;
+      transition: background-color .3s ease-in-out;
+      &:hover{
+        background-color: #ffd43b;
+      }
     }
 }
 .one_field{
@@ -78,7 +75,7 @@ export default {}
   gap: 10px;
   width: 100%;
   p{
-    font-size: 1.3rem;
+    font-size: 1vw;
   }
 }
 
