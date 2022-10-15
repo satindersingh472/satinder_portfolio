@@ -11,7 +11,7 @@
     </div>
     <div v-if="show_links === true" class="entire_navbar">
       <div class="links">
-        <h2>Projects</h2>
+        <router-link to="/work_satinder" class="one_link"><h2>Work</h2></router-link>
         <h2>Tools&Tech</h2>
         <router-link class="contact" to="/contact_page">Contact</router-link>
       </div>
