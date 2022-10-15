@@ -5,8 +5,7 @@
        <logo-satinder></logo-satinder>
         </div>
       <div class="links">
-        <router-link to="/projects_satinder" class="one_link"><h2>Projects</h2></router-link>
-        <router-link to="/tools_tech" class="one_link"><h2>Tools&Tech</h2></router-link>
+        <router-link to="/work_satinder" class="one_link"><h2>Work</h2></router-link>
         <a class="one_link" href="https://github.com/satindersingh472">Github</a>
         <a class="one_link" href="https://www.linkedin.com/in/satinder-singh-650137188/">LinkedIn</a>
         <router-link to="/contact_page" class="one_link">Contact</router-link>

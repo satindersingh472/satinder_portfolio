@@ -2,9 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from "@/views/homePage.vue"
 import ContactPage from "@/views/contactPage.vue"
-import AboutMe from "@/views/aboutMe.vue"
-import ToolsTech from "@/views/toolsTech.vue";
-import ProjectsSatinder from "@/views/projectsSatinder.vue";
+import WorkSatinder from "@/views/workSatinder.vue";
 
 Vue.use(VueRouter)
 
@@ -52,52 +50,11 @@ const routes = [
     ]
   },
   {
-    path: `/about_me`,
-    component: AboutMe,
+    path: `/work_satinder`,
+    component: WorkSatinder,
     meta:[
       {
-        title: 'About Satinder'
-      },
-      {
-        name: `author`,
-        content: `Satinder Singh`
-      },
-      {
-        name: `description`,
-        content: `Description about Satinder's projects, skills and personal information`
-      },
-      {
-        name: `keywords`,
-        content: `Satinder Singh, full-stack web developement, projects, skills, about`
-      }
-    ]
-  },{
-    path: `/tools_tech`,
-    component: ToolsTech,
-    meta: [
-      {
-        title: 'knowledge of Tools'
-      },
-      {
-        name: `author`,
-        content: `Satinder Singh`
-      },
-      {
-        name: `description`,
-        content: `Description about satinder's knowledge of tools`
-      },
-      {
-        name: `keywords`,
-        content: `programming languages, tools, using logic`
-      }
-    ]
-  },
-  {
-    path: `/projects_satinder`,
-    component: ProjectsSatinder,
-    meta:[
-      {
-        title: 'projects satinder'
+        title: 'work satinder'
       },
       {
         name: `author`,
