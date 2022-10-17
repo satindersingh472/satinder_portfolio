@@ -1,61 +1,69 @@
 <template>
   <div class="page">
-    <div class="navbar">
-      <nav-bar></nav-bar>
+    <nav-bar></nav-bar>
+    <div class="heading">
+      <h1>Tools</h1>
     </div>
-    <div class="all_work">
-      <div class="one_work">
-        <h1>Foodie</h1>
-        <div class="info_img">
-          <div class="info">
-            __Foodie is a food ordering platform.
-            <br />
-            __customer can order food from available restaurants.
-            <br />
-          </div>
-          <div class="image">
-            <img src="@/assets/image_foodie_six.png" />
-            <img src="@/assets/image_foodie_two.png" />
-          </div>
-        </div>
+    <div class="tools">
+      <div class="one_tool">
+        <img src="@/assets/html.png" alt="html 5 icon" class="icon">
+        <p>HTML5</p>
+      </div>
+      <div class="one_tool">
+        <img src="@/assets/css.png" alt="css icon" class="icon">
+        <p>CSS</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import NavBar from '@/components/navBar.vue'
+import NavBar from '@/components/navBar.vue';
+
 export default {
   components: {
-    NavBar,
-  },
+    NavBar
+      },
 }
 </script>
 
 <style lang="scss" scoped>
-.one_work {
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.page{
   display: grid;
-  h1 {
-    justify-self: center;
+  gap: 10px;
+}
+.heading{
+  display: grid;
+  place-items: center;
+  h1{
     font-weight: bold;
-    font-size: 3rem;
     color: #4b8bbe;
-    text-decoration: underline;
-    text-decoration-color: #ffd43b;
   }
-  .info_img {
+}
+.tools{
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+  .one_tool{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    place-items: center;
-    .image {
-      display: grid;
-      width: 70%; 
-     grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-      img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+    
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    &:hover{
+        box-shadow: 3px 3px 6px grey ;
       }
+    .icon{
+      height: 50px;
+      width: 50px;
+      
     }
   }
 }
