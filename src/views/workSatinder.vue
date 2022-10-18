@@ -2,8 +2,8 @@
   <div class="page">
     <nav-bar></nav-bar>
     <div class="heading">
-      <h1>Tools
-        <font-awesome-icon icon="fa-solid fa-screwdriver-wrench"/>
+      <h1>Skills
+        <font-awesome-icon icon="fa-solid fa-screwdriver-wrench" color="#ffd43b"/>
       </h1>
       <p>tools and technologies I use but not limited to because I tend to learn new stuff </p>
     </div>
@@ -57,6 +57,10 @@
        <font-awesome-icon icon="fa-brands fa-figma" class="fa-3x"/>
         <p>Figma</p>
       </div>
+      <div class="one_tool">
+        <font-awesome-icon icon="fa-brands fa-linux" class="fa-3x"/>
+        <p>Linux</p>
+      </div>
     </div>
   </div>
 </template>
@@ -71,10 +75,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import { faBicycle,faTerminal,faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
-import {faHtml5,faCss3Alt,faSass,faJs,faPython,faVuejs,faGithub,faFigma} from '@fortawesome/free-brands-svg-icons'
+import {faHtml5,faCss3Alt,faSass,faJs,faPython,faVuejs,faGithub,faFigma,faLinux} from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faBicycle,faHtml5,faCss3Alt,faSass,faJs,faPython,faVuejs,faTerminal,faScrewdriverWrench,faGithub,faFigma)
+library.add(faBicycle,faHtml5,faCss3Alt,faSass,faJs,faPython,faVuejs,faTerminal,faScrewdriverWrench,faGithub,faFigma,faLinux)
 
 
 export default {
