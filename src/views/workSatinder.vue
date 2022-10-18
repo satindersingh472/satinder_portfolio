@@ -2,7 +2,10 @@
   <div class="page">
     <nav-bar></nav-bar>
     <div class="heading">
-      <h1>Tools</h1>
+      <h1>Tools
+        <font-awesome-icon icon="fa-solid fa-screwdriver-wrench"/>
+      </h1>
+      <p>tools and technologies I use but not limited to because I tend to learn new stuff </p>
     </div>
     <div class="tools">
       <div class="one_tool">
@@ -12,17 +15,15 @@
       </div>
       <div class="one_tool">
       <font-awesome-icon icon="fa-brands fa-css3-alt" class="fa-3x" color="blue" />
-        <p>CSS</p>
+        <p>CSS3</p>
       </div>
       <div class="one_tool">
         <font-awesome-icon icon="fa-brands fa-sass" class="fa-3x"  color="rgb(205,103,153)"/>
         <p>Sass</p>
       </div>
       <div class="one_tool">
-        <span class="fa-layers fa-fw fa-3x" style="background: #f0db4f">
-          <span class="fa-layers-text">JS</span>
-          </span>
-          <p>Javascript</p>
+       <img src="@/assets/js.png" alt="js logo">
+       <p>Javascript</p>
       </div>
       <div class="one_tool">
         <font-awesome-icon icon="fa-brands fa-python" class="fa-3x" />
@@ -33,7 +34,28 @@
         <p>VueJs</p>
       </div>
       <div class="one_tool">
-        <font-awesome-icon icon="fa-solid fa-flask" class="fa-3x"/>
+        <font-awesome-icon icon="fa-solid fa-terminal" class="fa-3x"/>
+        <p>Terminal</p>
+      </div>
+      <div class="one_tool">
+        <img src="@/assets/flask.png" alt="flask image">
+        <p>Flask</p>
+      </div>
+      <div class="one_tool">
+        <img src="@/assets/code.png" alt="vs code">
+        <p>VS Code</p>
+      </div>
+      <div class="one_tool">
+        <img src="@/assets/git.png" alt="git image">
+        <p>Git</p>
+      </div>
+      <div class="one_tool">
+        <font-awesome-icon icon="fa-brands fa-github" class="fa-3x" color="purple"/>
+        <p>Github</p>
+      </div>
+      <div class="one_tool">
+       <font-awesome-icon icon="fa-brands fa-figma" class="fa-3x"/>
+        <p>Figma</p>
       </div>
     </div>
   </div>
@@ -48,11 +70,11 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faBicycle,faFlask } from '@fortawesome/free-solid-svg-icons'
-import {faHtml5,faCss3Alt,faSass,faJs,faPython,faVuejs} from '@fortawesome/free-brands-svg-icons'
+import { faBicycle,faTerminal,faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
+import {faHtml5,faCss3Alt,faSass,faJs,faPython,faVuejs,faGithub,faFigma} from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faBicycle,faHtml5,faCss3Alt,faSass,faJs,faPython,faVuejs,faFlask)
+library.add(faBicycle,faHtml5,faCss3Alt,faSass,faJs,faPython,faVuejs,faTerminal,faScrewdriverWrench,faGithub,faFigma)
 
 
 export default {
@@ -78,11 +100,12 @@ export default {
   h1{
     font-weight: bold;
     color: #4b8bbe;
+    font-size: 3rem;
   }
 }
 .tools{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
   place-items: center;
   margin-top: 20px;
   .one_tool{
@@ -90,11 +113,19 @@ export default {
     padding: 10px;
     place-items: center;
     text-align: center;
-    .icon{
+    font-size: 1rem;
+    img{
       height: 50px;
       width: 50px;
-      
     }
+  }
+}
+@media only screen and (min-width:600px){
+  .tools{
+    gap: 30px;
+    width: 70%;
+    justify-self: center;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   }
 }
 </style>
