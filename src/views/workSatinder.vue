@@ -15,11 +15,25 @@
         <p>CSS</p>
       </div>
       <div class="one_tool">
-        <font-awesome-icon icon="fa-brands fa-sass" class="fa-3x" />
+        <font-awesome-icon icon="fa-brands fa-sass" class="fa-3x"  color="rgb(205,103,153)"/>
         <p>Sass</p>
       </div>
       <div class="one_tool">
-        <font-awesome-icon icon="fa-brands fa-js" class="fa-3x"/>
+        <span class="fa-layers fa-fw fa-3x" style="background: #f0db4f">
+          <span class="fa-layers-text">JS</span>
+          </span>
+          <p>Javascript</p>
+      </div>
+      <div class="one_tool">
+        <font-awesome-icon icon="fa-brands fa-python" class="fa-3x" />
+        <p>Python</p>
+      </div>
+      <div class="one_tool">
+        <font-awesome-icon icon="fa-brands fa-vuejs" class="fa-3x" color="darkgreen"/>
+        <p>VueJs</p>
+      </div>
+      <div class="one_tool">
+        <font-awesome-icon icon="fa-solid fa-flask" class="fa-3x"/>
       </div>
     </div>
   </div>
@@ -34,11 +48,11 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faBicycle } from '@fortawesome/free-solid-svg-icons'
-import {faHtml5,faCss3Alt,faSass,faJs} from '@fortawesome/free-brands-svg-icons'
+import { faBicycle,faFlask } from '@fortawesome/free-solid-svg-icons'
+import {faHtml5,faCss3Alt,faSass,faJs,faPython,faVuejs} from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faBicycle,faHtml5,faCss3Alt,faSass,faJs)
+library.add(faBicycle,faHtml5,faCss3Alt,faSass,faJs,faPython,faVuejs,faFlask)
 
 
 export default {
@@ -68,7 +82,7 @@ export default {
 }
 .tools{
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
   margin-top: 20px;
   .one_tool{
@@ -76,9 +90,6 @@ export default {
     padding: 10px;
     place-items: center;
     text-align: center;
-    &:hover{
-        box-shadow: 3px 3px 6px grey ;
-      }
     .icon{
       height: 50px;
       width: 50px;
