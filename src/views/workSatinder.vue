@@ -6,12 +6,20 @@
     </div>
     <div class="tools">
       <div class="one_tool">
-        <img src="@/assets/html.png" alt="html 5 icon" class="icon">
+          <font-awesome-icon class="fa-3x" icon ="fa-brands fa-html5" color="tomato" />
         <p>HTML5</p>
+      
       </div>
       <div class="one_tool">
-        <img src="@/assets/css.png" alt="css icon" class="icon">
+      <font-awesome-icon icon="fa-brands fa-css3-alt" class="fa-3x" color="blue" />
         <p>CSS</p>
+      </div>
+      <div class="one_tool">
+        <font-awesome-icon icon="fa-brands fa-sass" class="fa-3x" />
+        <p>Sass</p>
+      </div>
+      <div class="one_tool">
+        <font-awesome-icon icon="fa-brands fa-js" class="fa-3x"/>
       </div>
     </div>
   </div>
@@ -19,10 +27,24 @@
 
 <script>
 import NavBar from '@/components/navBar.vue';
+/* import the fontawesome core */
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+/* import font awesome icon component */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+/* import specific icons */
+import { faBicycle } from '@fortawesome/free-solid-svg-icons'
+import {faHtml5,faCss3Alt,faSass,faJs} from '@fortawesome/free-brands-svg-icons'
+
+/* add icons to the library */
+library.add(faBicycle,faHtml5,faCss3Alt,faSass,faJs)
+
 
 export default {
   components: {
-    NavBar
+    NavBar,
+    FontAwesomeIcon
       },
 }
 </script>
@@ -46,17 +68,14 @@ export default {
 }
 .tools{
   display: grid;
+  grid-auto-flow: column;
   place-items: center;
   margin-top: 20px;
   .one_tool{
     display: grid;
-    
-    height: 100px;
-    width: 100px;
     padding: 10px;
+    place-items: center;
     text-align: center;
-    border: 1px solid #eee;
-    border-radius: 5px;
     &:hover{
         box-shadow: 3px 3px 6px grey ;
       }
