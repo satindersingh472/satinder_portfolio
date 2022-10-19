@@ -14,7 +14,7 @@
   h2{
     color: #FFD43B;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight:700;
   }
   .links{
     text-decoration: none;

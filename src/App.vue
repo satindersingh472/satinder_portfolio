@@ -5,10 +5,10 @@
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
 *{
-  font-family: 'Montserrat',sans-serif;
-  font-weight: 500;
+  font-family: 'Rajdhani',sans-serif;
+  font-weight: 600;
 }
 
 </style>
