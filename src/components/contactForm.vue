@@ -46,7 +46,8 @@
 </template>
 
 <script>
-export default {}
+export default {
+}
 </script>
 
 <style lang="scss" scoped>
@@ -62,7 +63,7 @@ export default {}
 .form {
   display: grid;
   place-items: center;
-  width: 90%;
+  width: 100%;
   .form_fields {
     width: 100%;
     display: grid;

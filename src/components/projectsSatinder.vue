@@ -5,6 +5,11 @@
       </h1>
          <img src="@/assets/projects.svg" alt="projects icon">
     </div>
+    <div class="projects">
+      <div class="one_project">
+        
+      </div>
+    </div>
   </div>
 </template>
 
