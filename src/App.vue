@@ -1,14 +1,20 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <v-app>
+   
+
+    <v-main>
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
-*{
-  font-family: 'Rajdhani',sans-serif;
-  font-weight: 600;
-}
+<script>
 
-</style>
+export default {
+  name: 'App',
+
+  data: () => ({
+    //
+  }),
+};
+</script>
