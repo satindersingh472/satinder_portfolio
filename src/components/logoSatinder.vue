@@ -1,6 +1,6 @@
 <template>
     <div>
-     <router-link class="links" to="/"><h2>{<span class="name">SATINDER</span>}</h2></router-link>
+     <router-link class="text-decoration-none text-h3 " to="/"><h2 class="ma-5 indigo--text text--darken-3 ">S</h2></router-link>
     </div>
 </template>
 
@@ -11,18 +11,6 @@
 </script>
 
 <style lang="scss" scoped>
-  h2{
-    color: #FFD43B;
-    font-size: 2rem;
-    font-weight:700;
-  }
-  .links{
-    text-decoration: none;
-  }
-  .name{
-    font-weight: 900;
-    color: #4b8bbe;
-    
-  }
+
 
 </style>

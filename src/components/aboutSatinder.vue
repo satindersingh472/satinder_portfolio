@@ -1,116 +1,42 @@
 <template>
-  <div class="image_info">
-    <div class="image">
-      <img
-        src="@/assets/satinder_profile.jpeg"
-        alt="satinder's profile image"
-      />
-    </div>
-    <div class="info">
-      <div class="name">
-        <h4 class="hi">👋,my name is<span class="bold_name"> SATINDER</span> and I am</h4>
-        <h1 class="full_stack">FULL STACK</h1>
-        <h1 class="web_developer">WEB DEVELOPER</h1>
-      </div>
-      <div class="info_box">
-        <h3>
-          I am passion driven Full - Stack Web Developer and I love to develop
-          responsive websites for different screen sizes.<br> A nice UI/UX, solid
-          database and defensive back-end code are my Interests while developing
-          a website.
-        </h3>
-      </div>
-    </div>
-
+  <div>
+    <v-container class="grey lighten-5" fluid>
+      <v-row justify="center" class="my-10" no-gutters>
+        <v-col
+          class="text-h4 text-sm-h3 text-md-h2 text-lg-h1 indigo--text text--darken-4"
+          align-self="center"
+        >
+          <v-row justify="center">
+            <p>Welcome, I am Satinder Singh</p>
+          </v-row>
+          <v-row align="center" justify="center">
+            <p class="field">A Full Stack Web Developer</p>
+          </v-row>
+        </v-col>
+      </v-row>
+      <v-row justify="center" align="center" >
+        <v-col cols="12" md="2" class="d-flex justify-center"  >
+          <v-avatar  size="200" >
+            <v-img  src="@/assets/satinder_profile.jpeg"></v-img>
+          </v-avatar>
+        </v-col>
+        <v-col cols="12" md="4" class="d-flex" >
+          <p class="text-h4" >A passionate full stack web developer with an enthusiasm and desire of learning, Creating responsive web applications, API(s),Databases</p>
+        </v-col>
+      </v-row>
+      <v-row justify="center" >
+        <a class="text-decoration-none" href="https://github.com/satindersingh472" target="blank">
+        <v-icon  large class="ma-5 purple--text text--darken-3">mdi-github</v-icon></a>
+      <a class="text-decoration-none" href="https://www.linkedin.com/in/satinder-singh-650137188/" target="blank"><v-icon large class="ma-5 blue--text text--darken-3" >mdi-linkedin</v-icon></a>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
-
-
 export default {
-  components: {
-  },
+  components: {},
 }
 </script>
 
-<style lang="scss" scoped>
-
-* {
-  padding: 0px;
-  margin: 0px;
-}
-img {
-  width: 100%;
-}
-.info {
-  display: grid;
-  line-height: 1.5;
-}
-.image_info {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
-.bold_name{
-  font-weight: 700;
-}
-.image {
-  img {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-  }
-}
-.name {
-  display: grid;
-  align-items: center;
-  margin-top: 10vh;
-  text-align: center;
-  h1{
-    font-weight: 900;
-    font-size: 2.5rem;
-  }
-  h4,h3{
-    font-size: 1.2rem;
-  }
-}
-.info_box {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  margin-top: 3vh;
-    h3{
-    font-size: 1rem;
-  }
-}
-.social_links {
-  position: sticky;
-  bottom: 0;
-  background: white;
-  width: 100%;
-  margin-top: 20px;
-
-}
-.full_stack{
-  color: #4b8bbe;
-  text-shadow: 3px 3px 6px #FFD43B;
-}
-.web_developer{
-  color: #FFD43B;
-  text-shadow: 3px 3px 6px #4b8bbe;
-}
-
-@media only screen and (min-width: 700px) {
-  .info_box {
-   h3{
-     font-size: 1.2rem;
-   }
-  }
-  .name {
-    h1 {
-      font-size: 5rem;
-    }
-  }
-}
-</style>
+<style lang="scss" scoped></style>
