@@ -1,6 +1,6 @@
 <template>
     <div>
-     <router-link class="text-decoration-none text-h3 " to="/"><h2 class="ma-5 indigo--text text--darken-3 ">S</h2></router-link>
+     <router-link class="text-decoration-none text-h3 " to="/"><h2 class="indigo--text text--darken-3">S</h2></router-link>
     </div>
 </template>
 

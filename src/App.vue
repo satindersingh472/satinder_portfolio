@@ -1,9 +1,8 @@
 <template>
 <div>
   <v-app>
-    <v-app-bar class="indigo lighten-5" floating >
+    <v-app-bar app flat >
          <nav-bar ></nav-bar>
-
     </v-app-bar>
 
     <v-main>
@@ -23,8 +22,4 @@ components: { NavBar },
 };
 </script>
 <style lang="scss">
-@import '@/scss/variables.scss';
-// .all{
-//   font-family: $body-font-family;
-// }
 </style>

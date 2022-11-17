@@ -18,12 +18,5 @@ import ProjectsSatinder from '@/components/projectsSatinder.vue'
 </script>
 
 <style lang="scss" scoped>
-*{
-  padding: 0px;
-  margin: 0px;
-}
-.page{
-  display: grid;
-  gap: 2vw;
-}
+
 </style>

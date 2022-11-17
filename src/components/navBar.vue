@@ -1,11 +1,12 @@
 <template>
   <div>
-    <div v-if="desktop_view === true">
+       <div v-if="desktop_view === true">
       <navbar-desktop></navbar-desktop>
     </div>
     <div v-if="desktop_view === false" >
         <navbar-mobile></navbar-mobile>
     </div>
+   
   </div>
 </template>
 
