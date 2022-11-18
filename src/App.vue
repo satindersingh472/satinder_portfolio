@@ -5,7 +5,7 @@
          <nav-bar ></nav-bar>
     </v-app-bar>
 
-    <v-main>
+    <v-main class="grey lighten-3"  >
       <router-view/>
     </v-main>
   </v-app>

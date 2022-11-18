@@ -21,7 +21,7 @@
           </v-avatar>
         </v-col>
         <v-col cols="12" md="4" class="d-flex">
-          <p class="text-body-1">
+          <p class="text-h6">
             A passionate full stack web developer with an enthusiasm and desire
             of learning, Creating responsive web applications, API(s), Databases.
             I have the ability to teach myself a technology that is needed for

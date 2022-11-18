@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomePage from "@/views/homePage.vue"
 import ContactPage from "@/views/contactPage.vue"
 import WorkSatinder from "@/views/workSatinder.vue";
+import CaseMyride from '@/views/caseMyride.vue'
 
 Vue.use(VueRouter)
 
@@ -67,6 +68,27 @@ const routes = [
       {
         name: `keywords`,
         content: `vue projects, python projects, javascript, front-end, database, backend`
+      }
+    ]
+  },
+  {
+    path: '/myride',
+    component: CaseMyride,
+    meta:[
+      {
+        title: 'Satinder Myride'
+      },
+      {
+        name: 'author',
+        content: 'Satinder Singh'
+      },
+      {
+        name: 'description',
+        content: 'This is the case study for myride website'
+      },
+      {
+        name: 'keywords',
+        content: 'rides,easy to use'
       }
     ]
   }

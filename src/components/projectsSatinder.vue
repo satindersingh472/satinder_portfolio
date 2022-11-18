@@ -15,8 +15,9 @@
           </p>
           <p class="grey--text text--darken-2" >Technologies used: VueJs, Vuetify, Javascript, Python, Flask, Mariadb. </p>
           <v-row style="display:grid;place-items:center;grid-auto-flow:column;" align-content="start" >
-            <v-btn class="grey ma-5" >Live website</v-btn>
-            <v-btn class="grey ma-5 ">Github Repo</v-btn>
+            <v-btn class="ma-5" elevation="5" >Live website</v-btn>
+            <v-btn class="ma-5 " elevation="5">Github Repo</v-btn>
+            <router-link to="/myride" class="text-decoration-none" ><v-btn class="ma-5" elevation="5" >Case study</v-btn></router-link>
           </v-row>
         </v-col>
         <v-col cols="12" md="6" >

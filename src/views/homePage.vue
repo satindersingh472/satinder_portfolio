@@ -1,5 +1,5 @@
 <template>
-    <div class="grey lighten-5" >
+    <div>
         <about-satinder ></about-satinder>
         <projects-satinder></projects-satinder>
        
