@@ -3,7 +3,7 @@
     <v-container fluid>
       <v-row justify="center" class="my-10" no-gutters>
         <v-col
-          class="text-h4 text-sm-h3 text-md-h2 text-lg-h1 indigo--text text--darken-4"
+          class="text-h5 text-sm-h4 text-md-h3 text-lg-h2 indigo--text text--darken-4"
           align-self="center"
         >
           <v-row justify="center">
@@ -21,9 +21,9 @@
           </v-avatar>
         </v-col>
         <v-col cols="12" md="4" class="d-flex">
-          <p class="text-h4">
+          <p class="text-body-1">
             A passionate full stack web developer with an enthusiasm and desire
-            of learning, Creating responsive web applications, API(s),Databases.
+            of learning, Creating responsive web applications, API(s), Databases.
             I have the ability to teach myself a technology that is needed for
             the task.
           </p>
@@ -35,16 +35,19 @@
           href="https://github.com/satindersingh472"
           target="blank"
         >
-          <v-btn color="transparent purple--text text--darken-3 ma-5 text-h6">
+        <v-icon class="ma-5 purple--text text--darken-3" x-large >mdi-github</v-icon>
+          <!-- <v-btn color="white--text purple darken-3 ma-5 text-h6">
             view my github
-          </v-btn>
+          </v-btn> -->
         </a>
         <a
           class="text-decoration-none"
           href="https://www.linkedin.com/in/satinder-singh-650137188/"
           target="blank"
         >
-        <v-btn class="ma-5 blue--text text--darken-3 text-h6" >View my linkedin</v-btn>
+                <v-icon class="ma-5 blue--text text--darken-3" x-large >mdi-linkedin</v-icon>
+
+        <!-- <v-btn class="ma-5 white--text blue darken-3 text-h6" >View my linkedin</v-btn> -->
         </a>
       </v-row>
     </v-container>

@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="all" >
   <v-app>
     <v-app-bar app flat >
          <nav-bar ></nav-bar>
@@ -22,4 +22,10 @@ components: { NavBar },
 };
 </script>
 <style lang="scss">
+@import '@/scss/variables.scss';
+.all{
+  font-family: $body-font-family;
+}
+
+
 </style>
