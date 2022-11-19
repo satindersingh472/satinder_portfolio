@@ -2,7 +2,9 @@
   <div>
     <v-container>
       <v-row justify="center">
-        <p class="text-h4 text-md-h3 ma-5">MyRide.ml</p>
+        <p class="text-h4 text-md-h3 ma-5 indigo--text text--darken-4">
+          Case Study MyRide.ml
+        </p>
       </v-row>
       <v-row justify="center" class="my-10">
         <p class="text-h5 text-md-h4 text-left pa-5">
@@ -14,8 +16,13 @@
           driver.
         </p>
       </v-row>
-      <v-row justify="center" >
-        <p class="text-h5" >Technologies used</p>
+      <v-row justify="center">
+        <p class="text-h5 indigo--text text--darken-4">Technologies used</p>
+      </v-row>
+      <v-row class="ma-10" justify="center">
+        <v-col cols="8" >
+          <v-icon class="deep-orange--text" x-large >mdi-language-html5 (html)</v-icon>
+        </v-col>
       </v-row>
       <v-row justify="center" class="my-10">
         <v-col cols="12" lg="6" style="display: grid; place-items: center;">
@@ -43,7 +50,13 @@
         </v-col>
       </v-row>
       <v-row class="my-10">
-        <v-col cols="12" lg="6" style="display: grid; place-items: center;" order-sm="1"  order-md="2">
+        <v-col
+          cols="12"
+          lg="6"
+          style="display: grid; place-items: center;"
+          order-sm="1"
+          order-md="2"
+        >
           <v-img
             src="@/assets/search_upcoming.png"
             contain
@@ -52,32 +65,56 @@
           ></v-img>
         </v-col>
 
-        <v-col cols="12" lg="6" align-self="center" order-md="1" order-sm="2" >
-          <p class="text-h5 ">
+        <v-col cols="12" lg="6" align-self="center" order-md="1" order-sm="2">
+          <p class="text-h5">
             1.Search rides from one city to another city.
           </p>
-          <p class="text-h5 ">2. Discover upcoming rides.</p>
-          <p class="text-h5 ">
+          <p class="text-h5">2. Discover upcoming rides.</p>
+          <p class="text-h5">
             3. Book ride from the same page with just one-click.
           </p>
         </v-col>
       </v-row>
       <v-row>
-        <v-col  cols="12" lg="6"  style="display: grid; place-items: center;">
-          <v-img src="@/assets/profile_ride.png" contain max-height="500" max-width="500" ></v-img>
+        <v-col cols="12" lg="6" style="display: grid; place-items: center;">
+          <v-img
+            src="@/assets/profile_ride.png"
+            contain
+            max-height="500"
+            max-width="500"
+          ></v-img>
         </v-col>
-        <v-col align-self="center"  cols="12" lg="6"   >
-          <p class="text-h5" >1.Clients can change any information related to profile easily.</p>
-          <p  class="text-h5 " >2.Clients can post a new ride with just few important inputs.</p>
+        <v-col align-self="center" cols="12" lg="6">
+          <p class="text-h5">
+            1.Clients can change any information related to profile easily.
+          </p>
+          <p class="text-h5">
+            2.Clients can post a new ride with just few important inputs.
+          </p>
         </v-col>
       </v-row>
-      <v-row justify="center" >
-        <v-col cols="12" lg="6" style="display:grid;place-items:center;" order-md="2" order-sm="1" >
-          <v-img src="@/assets/posted_booking.png" contain max-height="500" max-width="500" > </v-img>
+      <v-row justify="center">
+        <v-col
+          cols="12"
+          lg="6"
+          style="display: grid; place-items: center;"
+          order-md="2"
+          order-sm="1"
+        >
+          <v-img
+            src="@/assets/posted_booking.png"
+            contain
+            max-height="500"
+            max-width="500"
+          ></v-img>
         </v-col>
-        <v-col order-md="1" order-sm="2"  align-self="center"  >
-          <p class="text-h5 " >1.After posting rides it is easy to access the bookings.</p>
-          <p class="text-h5 ">2.Passenger who booked the ride can access the bookings.</p>
+        <v-col order-md="1" order-sm="2" align-self="center">
+          <p class="text-h5">
+            1.After posting rides it is easy to access the bookings.
+          </p>
+          <p class="text-h5">
+            2.Passenger who booked the ride can access the bookings.
+          </p>
         </v-col>
       </v-row>
     </v-container>
@@ -85,7 +122,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>
