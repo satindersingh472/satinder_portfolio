@@ -14,6 +14,9 @@
           driver.
         </p>
       </v-row>
+      <v-row justify="center" >
+        <p class="text-h5" >Technologies used</p>
+      </v-row>
       <v-row justify="center" class="my-10">
         <v-col cols="12" lg="6" style="display: grid; place-items: center;">
           <v-row>
@@ -26,14 +29,14 @@
           </v-row>
         </v-col>
         <v-col cols="12" lg="6" align-self="center">
-          <p class="text-h5 text-md-h4">
+          <p class="text-h5">
             1. Signup with valid email and the user will recieve an email
             verification.
           </p>
-          <p class="text-h5 text-md-h4">
+          <p class="text-h5">
             2.Upon verification client can use the application as normal.
           </p>
-          <p class="text-h5 text-md-h4">
+          <p class="text-h5">
             3.Password is secure and encrypted so that user can choose any
             password.
           </p>
@@ -50,11 +53,11 @@
         </v-col>
 
         <v-col cols="12" lg="6" align-self="center" order-md="1" order-sm="2" >
-          <p class="text-h5 text-md-h4">
+          <p class="text-h5 ">
             1.Search rides from one city to another city.
           </p>
-          <p class="text-h5 text-md-h4">2. Discover upcoming rides.</p>
-          <p class="text-h5 text-md-h4">
+          <p class="text-h5 ">2. Discover upcoming rides.</p>
+          <p class="text-h5 ">
             3. Book ride from the same page with just one-click.
           </p>
         </v-col>
@@ -64,17 +67,17 @@
           <v-img src="@/assets/profile_ride.png" contain max-height="500" max-width="500" ></v-img>
         </v-col>
         <v-col align-self="center"  cols="12" lg="6"   >
-          <p class="text-h5 text-md-h4" >1.Clients can change any information related to profile easily.</p>
-          <p  class="text-h5 text-md-h4" >2.Clients can post a new ride with just few important inputs.</p>
+          <p class="text-h5" >1.Clients can change any information related to profile easily.</p>
+          <p  class="text-h5 " >2.Clients can post a new ride with just few important inputs.</p>
         </v-col>
       </v-row>
-      <v-row>
+      <v-row justify="center" >
         <v-col cols="12" lg="6" style="display:grid;place-items:center;" order-md="2" order-sm="1" >
           <v-img src="@/assets/posted_booking.png" contain max-height="500" max-width="500" > </v-img>
         </v-col>
-        <v-col order-md="1" order-sm="2" align-self="center" >
-          <p class="text-h5 text-md-h4" >1.After posting rides it is easy to access the bookings.</p>
-          <p class="text-h5 text-md-h4">2.Passenger who booked the ride can access the bookings.</p>
+        <v-col order-md="1" order-sm="2"  align-self="center"  >
+          <p class="text-h5 " >1.After posting rides it is easy to access the bookings.</p>
+          <p class="text-h5 ">2.Passenger who booked the ride can access the bookings.</p>
         </v-col>
       </v-row>
     </v-container>
