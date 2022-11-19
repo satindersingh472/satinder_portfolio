@@ -17,11 +17,11 @@
         </p>
       </v-row>
       <v-row justify="center">
-        <p class="text-h5 indigo--text text--darken-4">Technologies used</p>
+        <p class="text-h4 indigo--text text--darken-4">Technologies used</p>
       </v-row>
       <v-row class="ma-10" justify="center">
-        <v-col cols="8" >
-          <v-icon class="deep-orange--text" x-large >mdi-language-html5 (html)</v-icon>
+        <v-col cols="6" >
+          <p class="text-h5 grey--text text--darken-2" >HTML5, CSS3, Javascript, Vuejs, Python, Flask, Mariadb, Dbeaver, SQL, Git, Github and Vuetify. </p>
         </v-col>
       </v-row>
       <v-row justify="center" class="my-10">
