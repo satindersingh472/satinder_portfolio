@@ -43,8 +43,8 @@
         </v-col>
       </v-row>
       <v-row justify="center" class="my-10">
-        <v-col cols="12" lg="6" style="display: grid; place-items: center;">
-          <v-row >
+        <v-col cols="12" lg="6" style="display: grid; place-items: center;" order-lg="2">
+         
             <v-img
               src="@/assets/login_myride.png"
               contain
@@ -52,7 +52,7 @@
               max-height="500"
               max-width="500"
             ></v-img>
-          </v-row>
+       
         </v-col>
         <v-col cols="12" lg="6" align-self="center" >
       
@@ -92,7 +92,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" lg="6"   style="display: grid; place-items: center;">
+        <v-col cols="12" lg="6"   style="display: grid; place-items: center;" order-lg="2">
           <v-img
             src="@/assets/profile_myride.png"
             contain
@@ -136,7 +136,7 @@
       </v-row>
       <v-row>
         <v-col  style="display: grid; place-items: center;"    cols="12"
-          lg="6" >
+          lg="6" order-lg="2" >
           <v-img src="@/assets/booking_posted.png"
           contain
           width="100%"

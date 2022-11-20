@@ -1,7 +1,7 @@
 <template>
 <div class="all" >
   <v-app>
-    <v-app-bar app flat >
+    <v-app-bar app flat class="grey lighten-3" height="100px" >
          <nav-bar ></nav-bar>
     </v-app-bar>
 

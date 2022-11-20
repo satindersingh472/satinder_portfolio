@@ -96,8 +96,21 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+  scrollBehavior(to,from,savedPosition){
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+
+  }
+
 });
+
+
+
+
 
 /*remove the old meta tag */
 router.beforeEach((to, from, next) => {

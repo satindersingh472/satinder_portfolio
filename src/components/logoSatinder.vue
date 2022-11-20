@@ -11,6 +11,11 @@
 </script>
 
 <style lang="scss" scoped>
+@import '@/scss/variables.scss';
+h2{
+    font-family: 'Rancho',sans-serif;
+
+}
 
 
 </style>

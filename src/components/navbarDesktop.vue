@@ -1,7 +1,7 @@
 <template>
   <div>
 
-        <logo-satinder></logo-satinder>
+        <logo-satinder class="pa-5"></logo-satinder>
    
   </div>
 </template>
