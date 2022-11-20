@@ -73,7 +73,7 @@
         </v-col>
       </v-row>
       <v-row justify="center" >
-        <v-col style="display:grid;place-items:center;" order-lg="2">
+        <v-col cols="12" lg="6" style="display:grid;place-items:center;" order-lg="2">
             <v-img src="@/assets/add_menu.png" width="100%" max-height="500" max-width="500" contain></v-img>
         </v-col>
         <v-col align-self="center">

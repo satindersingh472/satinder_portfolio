@@ -1,126 +1,51 @@
 <template>
-  <div class="page">
-    <div class="question">
-        <h1>Get In touch</h1>
-      </div>
-    <div class="form">
-      <div class="form_fields">
-        <form
-          class="actual_form"
-          action="https://formspree.io/f/mjvzoeoy"
-          method="post"
-        >
-          <div class="one_field">
-            <p>
-              First Name
-              <span class="star">*</span>
-            </p>
-            <input type="text" ref="first_name" name="firstname" />
-          </div>
-          <div class="one_field">
-            <p>
-              Last Name
-              <span class="star">*</span>
-            </p>
-            <input type="text" ref="last_name" name="lastname" />
-          </div>
-          <div class="one_field">
-            <p>
-              Email
-              <span class="star">*</span>
-            </p>
-            <input type="email" ref="email" name="email" />
-          </div>
-          <div class="one_field">
-            <p>
-              Message
-              <span class="star">*</span>
-            </p>
-            <textarea ref="text" name="message"></textarea>
-          </div>
-          <input class="submit" type="submit" value="Submit" />
-        </form>
-      </div>
-    </div>
+  <div>
+    <v-container>
+      <v-row class="my-10" justify="center">
+        <p class="indigo--text text--darken-4 my-10 text-h4 text-md-h3">
+          Get In Touch
+        </p>
+      </v-row>
+      <v-row justify="center">
+        <v-card width="500px" class="pa-1 ma-2">
+         
+          <v-form action="https://formspree.io/f/mjvzoeoy" method="post">
+            <v-container>
+              <v-row justify="center">
+                <v-col cols="12" lg="6">
+                  <v-text-field
+                    class="pa-1"
+                    outlined
+                    label="First Name"
+                    name="First Name"
+                  ></v-text-field>
+                </v-col>
+                <v-col cols="12" lg="6">
+                  <v-text-field
+                    class="pa-1"
+                    outlined
+                    label="Last Name"
+                    name="Last Name"
+                  ></v-text-field>
+                </v-col>
+                <v-col cols="12"> 
+                  <v-text-field outlined label="Email" name="Email" ></v-text-field>
+                </v-col>
+                <v-col cols="12">
+                  <v-textarea outlined label="message" name="Message" ></v-textarea>
+                </v-col>
+                <v-btn type="submit" class="success ma-3"> submit</v-btn>
+              </v-row>
+            </v-container>
+          </v-form>
+        </v-card>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
-export default {
-}
+export default {}
 </script>
 
-<style lang="scss" scoped>
-* {
-  padding: 0px;
-  margin: 0px;
-}
-.page {
-  display: grid;
-  place-items: center;
-  margin: 10vh 0px;
-}
-.form {
-  display: grid;
-  place-items: center;
-  width: 100%;
-  .form_fields {
-    width: 100%;
-    display: grid;
-    input[type='text'],
-    input[type='email'],
-    textarea {
-      padding: 20px 0px;
-      border: 1px solid #4b8bbe;
-      border-radius: 5px;
-    }
-  }
-}
-.actual_form {
-  display: grid;
-  gap: 10px;
-  input[type='submit'] {
-    display: grid;
-    justify-self: center;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 4px #4b8bbe;
-    transition: background-color 0.3s ease-in-out;
-    &:hover {
-      background-color: #ffd43b;
-    }
-  }
-}
-.one_field {
-  display: grid;
-  gap: 10px;
-  width: 100%;
-  p {
-    font-size: 1.2rem;
-  }
-}
-h1 {
-  font-weight: bold;
-  font-size: 10vw;
-  color: #4b8bb4;
-}
-
-.question {
-  width: 100%;
-  display: grid;
-  place-items: center;
-  text-decoration: underline #ffd43b;
-}
-
-@media only screen and (min-width: 600px) {
-  .form {
-    width: 600px;
-  }
-  .question{
-    h1{
-      font-size: 5rem;
-    }
-  }
-}
-</style>
+<style lang="scss" scoped></style>

@@ -2,7 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from "@/views/homePage.vue"
 import ContactPage from "@/views/contactPage.vue"
-import WorkSatinder from "@/views/workSatinder.vue";
 import CaseMyride from '@/views/caseMyride.vue'
 import CaseFoodie from '@/views/caseFoodie.vue'
 
@@ -51,27 +50,7 @@ const routes = [
       }
     ]
   },
-  {
-    path: `/work_satinder`,
-    component: WorkSatinder,
-    meta:[
-      {
-        title: 'work satinder'
-      },
-      {
-        name: `author`,
-        content: `Satinder singh`
-      },
-      {
-        name: `description`,
-        content: `Description about the projects from satinder`
-      },
-      {
-        name: `keywords`,
-        content: `vue projects, python projects, javascript, front-end, database, backend`
-      }
-    ]
-  },
+
   {
     path: '/myride',
     component: CaseMyride,
