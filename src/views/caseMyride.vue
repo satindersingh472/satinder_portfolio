@@ -25,6 +25,16 @@
             is used as a version control system and Github for hosting the source code. The website is hosted with oracle cloud server.</p>
         </v-col>
       </v-row>
+      <v-row justify="center" > 
+        <v-col   cols="12"
+          lg="6"
+          style="display: grid; place-items: center;" >
+          <v-img src="@/assets/signup_myride.png" contain width="100%" max-height="500" max-width="500" > </v-img>
+        </v-col>
+        <v-col>
+          <p>1. Signup easily with a valid email and password along with first and last name</p>
+        </v-col>
+      </v-row>
       <v-row justify="center" class="my-10">
         <v-col cols="12" lg="6" style="display: grid; place-items: center;">
           <v-row >
