@@ -21,18 +21,25 @@
       </v-row>
       <v-row class="ma-10" justify="center">
         <v-col cols="12" lg="6" >
-          <p class="text-h5" >It is a full stack application. Front end was designed and developed with Vuejs. Back end developed with Python and Flask. Database with the help of Mariadb and Dbeaver. Git is 
-            is used as a version control system and Github for hosting the source code. The website is hosted with oracle cloud server.</p>
+          <p class="text-h5" >It is a full stack application. Front end was designed and developed with Vuejs. 
+            Back end developed with Python and Flask. Database with the help of Mariadb and Dbeaver. Git
+            is used as a version control system and Github for hosting the source code. 
+            The website is hosted with oracle cloud server.</p>
         </v-col>
       </v-row>
       <v-row justify="center" > 
         <v-col   cols="12"
           lg="6"
           style="display: grid; place-items: center;" >
-          <v-img src="@/assets/signup_myride.png" contain width="100%" max-height="500" max-width="500" > </v-img>
+          <v-img src="@/assets/signup_myride.png" contain width="100%" max-height="500" max-width="500"></v-img>
         </v-col>
-        <v-col>
-          <p>1. Signup easily with a valid email and password along with first and last name</p>
+        <v-col align-self="center">
+         <p class="text-h5" >
+            1. Signup with valid a email and the user will recieve an email for
+            verification once Register.</p>
+            <p class="text-h5" >2. After confirming the email the user will be able to book rides, post rides, change profile information and also upload a profile image.
+            </p>
+          
         </v-col>
       </v-row>
       <v-row justify="center" class="my-10">
@@ -48,15 +55,12 @@
           </v-row>
         </v-col>
         <v-col cols="12" lg="6" align-self="center" >
+      
           <p class="text-h5">
-            1. Signup with valid email and the user will recieve an email
-            verification.
+           1.Client can login with email and password.
           </p>
           <p class="text-h5">
-            2.Upon verification client can use the application as normal.
-          </p>
-          <p class="text-h5">
-            3.Password is secure and encrypted so that user can choose any
+            2.Password is secure and encrypted so that user can choose any
             password.
           </p>
         </v-col>
@@ -73,6 +77,7 @@
             contain
             max-width="500"
             max-height="500"
+            width="100%"
           ></v-img>
         </v-col>
 
@@ -87,12 +92,13 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" lg="6">
+        <v-col cols="12" lg="6"   style="display: grid; place-items: center;">
           <v-img
-            src="@/assets/profile_ride.png"
+            src="@/assets/profile_myride.png"
             contain
             max-height="500"
             max-width="500"
+            width="100%"
           ></v-img>
         </v-col>
         <v-col align-self="center" cols="12" lg="6" >
@@ -112,19 +118,34 @@
 
         >
           <v-img
-            src="@/assets/posted_booking.png"
+            src="@/assets/posted_rides.png"
             contain
             max-height="500"
             max-width="500"
+            width="100%"
           ></v-img>
         </v-col>
         <v-col  align-self="center">
           <p class="text-h5">
-            1.After posting rides it is easy to access the bookings.
+            1.After posting ride it is easy to access the bookings.
           </p>
           <p class="text-h5">
-            2.Passenger who booked the ride can access the bookings.
+            2.After someone books the ride, rider can confirm the booking made by passenger.
           </p>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col  style="display: grid; place-items: center;"    cols="12"
+          lg="6" >
+          <v-img src="@/assets/booking_posted.png"
+          contain
+          width="100%"
+          max-height="500"
+          max-width="500"></v-img>
+        </v-col>
+        <v-col align-self="center" >
+          <p class="text-h5">1. After booking a ride, passenger can easily track the status of booking.</p>
+          <p class="text-h5">2. passenger will immediately get status update when rider confirms the booking.</p>
         </v-col>
       </v-row>
     </v-container>

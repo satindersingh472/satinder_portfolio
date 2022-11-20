@@ -4,7 +4,7 @@
       <v-row justify="center">
         <h2 class="indigo--text text--darken-4 my-10 text-h2">Projects</h2>
       </v-row>
-      <v-row justify="center">
+      <v-row justify="end">
         <v-col cols="12" md="5" style="display:grid; justify-items:start;">
           <p class="text-h2 font-weight-bold" style="align-self:end;">
             MyRide
