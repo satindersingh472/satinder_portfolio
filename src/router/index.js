@@ -4,6 +4,8 @@ import HomePage from "@/views/homePage.vue"
 import ContactPage from "@/views/contactPage.vue"
 import CaseMyride from '@/views/caseMyride.vue'
 import CaseFoodie from '@/views/caseFoodie.vue'
+import ProjectsSatinder from '@/components/projectsSatinder.vue'
+import ContactForm from '@/components/contactForm.vue'
 
 Vue.use(VueRouter)
 
@@ -90,6 +92,49 @@ const routes = [
       {
         name: 'keywords',
         content: 'foodie,order_food,cheap_food,good_food,fresh_food,hot_food,better_customer_service'
+      }
+    ]
+  },
+  {
+    path: '/projects_satinder',
+    name: 'projects',
+    component: ProjectsSatinder,
+    meta:[
+      {
+        title:'Projects Satinder'
+      },
+      {
+        name: 'author',
+        content: 'Satinder Singh'
+      },
+      {
+        name:'description',
+        content: 'The projects made by satinder singh'
+      },
+      {
+        name: 'keywords',
+        content: 'projects,satinder singh'
+      }
+    ]
+  },
+  {
+    path: '/contact',
+    component: ContactForm,
+    meta:[
+      {
+        title:'Contact Satinder'
+      },
+      {
+        name:'author',
+        content: 'Satinder Singh'
+      },
+      {
+        name: 'description',
+        content: 'Contact form for satinder singh'
+      },
+      {
+        name: 'keywords',
+        content: 'satinder singh,full_stack_web_developer'
       }
     ]
   }
