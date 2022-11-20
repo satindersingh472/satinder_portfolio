@@ -4,6 +4,7 @@ import HomePage from "@/views/homePage.vue"
 import ContactPage from "@/views/contactPage.vue"
 import WorkSatinder from "@/views/workSatinder.vue";
 import CaseMyride from '@/views/caseMyride.vue'
+import CaseFoodie from '@/views/caseFoodie.vue'
 
 Vue.use(VueRouter)
 
@@ -84,11 +85,32 @@ const routes = [
       },
       {
         name: 'description',
-        content: 'This is the case study for myride website'
+        content: 'explaining about what is myride, how it works and what technologies are used'
       },
       {
         name: 'keywords',
-        content: 'rides,easy to use'
+        content: 'rides,easy_use, case_study,explaining,what_is_my_ride'
+      }
+    ]
+  },
+  {
+    path: '/foodie',
+    component: CaseFoodie,
+    meta:[
+      {
+        title: 'Satinder Foodie'
+      },
+      {
+        name: 'author',
+        content: 'Satinder Singh'
+      },
+      {
+        name: 'description',
+        content: 'Case study for foodie explaining use case and technologies used for foodie project'
+      },
+      {
+        name: 'keywords',
+        content: 'foodie,order_food,cheap_food,good_food,fresh_food,hot_food,better_customer_service'
       }
     ]
   }

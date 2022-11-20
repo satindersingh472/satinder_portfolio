@@ -4,8 +4,8 @@
       <v-row justify="center">
         <h2 class="indigo--text text--darken-4 my-10 text-h2">Projects</h2>
       </v-row>
-  <myride-brief></myride-brief>
-  <foodie-brief></foodie-brief>
+  <myride-brief class="my-10" ></myride-brief>
+  <foodie-brief ></foodie-brief>
     </v-container>
   </div>
 </template>

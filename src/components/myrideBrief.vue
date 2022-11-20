@@ -33,7 +33,7 @@
       </v-col>
       <v-col cols="12" md="6" style="display: grid; place-items: center;">
         <v-img
-          src="@/assets/mockup_myride.png"
+          src="@/assets/my_booked_rides.png"
           max-height="500"
           max-width="600"
           width="100%"

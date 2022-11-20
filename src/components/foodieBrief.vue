@@ -21,17 +21,17 @@
           >
             <v-btn class="ma-5" elevation="5">Live website</v-btn>
           </a>
-          <a href="https://www.github.com/satindersingh472/foodie_api" class="text-decoration-none" >
+          <a href="https://www.github.com/satindersingh472/foodie_api" target="blank" class="text-decoration-none" >
             <v-btn class="ma-5" elevation="5">Github Repo</v-btn>
           </a>
-          <router-link to="/myride" class="text-decoration-none">
+          <router-link to="/foodie" class="text-decoration-none">
             <v-btn class="ma-5" elevation="5">Case study</v-btn>
           </router-link>
         </div>
       </v-col>
       <v-col cols="12" md="6" style="display: grid; place-items: center;">
         <v-img
-          src="@/assets/mockup_myride.png"
+          src="@/assets/menu_foodie.png"
           max-height="500"
           max-width="600"
           width="100%"
