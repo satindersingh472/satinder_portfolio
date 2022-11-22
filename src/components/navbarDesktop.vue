@@ -12,6 +12,7 @@
       <router-link class="text-decoration-none indigo--text text--darken-3 text-h5 mx-10" to="/projects_satinder">Projects</router-link>
       <router-link class="text-decoration-none indigo--text text--darken-3 text-h5 mx-10" to="/contact">Contact</router-link>
       <a class="text-decoration-none indigo--text text--darken-3 text-h5 mx-10" target="blank" href="https://www.github.com/satindersingh472">Github</a>
+      <a class="text-decoration-none indigo--text text--darken-3 text-h5 mx-10" target="blank" href="https://www.linkedin.com/in/satinder-singh-650137188/">LinkedIn</a>
         </v-row>
       </v-col>
     </v-app-bar>
