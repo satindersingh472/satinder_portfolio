@@ -6,6 +6,7 @@
       </v-row>
   <myride-brief class="my-10" ></myride-brief>
   <foodie-brief ></foodie-brief>
+  <okotoks-brief></okotoks-brief>
     </v-container>
   </div>
 </template>
@@ -13,10 +14,12 @@
 <script>
 import FoodieBrief from '@/components/foodieBrief.vue'
 import MyrideBrief from '@/components/myrideBrief.vue'
+import OkotoksBrief from '@/components/okotoksBrief.vue'
 export default {
   components:{
     MyrideBrief,
-    FoodieBrief
+    FoodieBrief,
+    OkotoksBrief
   }
 }
 </script>
