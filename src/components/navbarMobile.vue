@@ -7,7 +7,8 @@
         <v-spacer></v-spacer>
        <v-app-bar-nav-icon x-large @click="drawer = !drawer" ></v-app-bar-nav-icon>
        </v-app-bar>
-        <v-navigation-drawer right app clipped temporary v-model="drawer" disable-resize-watcher disable-route-watcher >
+        <v-navigation-drawer  right app clipped temporary v-model="drawer" disable-resize-watcher disable-route-watcher >
+          <v-list-item></v-list-item>
           <v-list-item>
               <router-link class="text-decoration-none indigo--text text--darken-3 text-h5 my-10"  to="/projects_satinder">Projects</router-link>
           </v-list-item>
