@@ -25,9 +25,9 @@
           <a href="https://github.com/satindersingh472/okotoksPizza_lab" target="blank" class="text-decoration-none" >
             <v-btn class="ma-5" elevation="5">Github Repo</v-btn>
           </a>
-          <router-link to="/foodie" class="text-decoration-none">
+          <!-- <router-link to="/foodie" class="text-decoration-none">
             <v-btn class="ma-5" elevation="5">Case study</v-btn>
-          </router-link>
+          </router-link> -->
         </div>
       </v-col>
       <v-col
